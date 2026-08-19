@@ -12,4 +12,4 @@ draft: false
 
 在试过多个方案后，我最终选择了 **Astro 7**：默认零 JS、内容集合原生支持 Markdown、构建产物是纯静态文件，完美契合 Cloudflare Pages。
 
-dajsfkldjklafs;jdlkjfals;jdnckl;aslkdn;vlas;dnvlk;asnckxlvnaslkd;nvclkas;dnclk;nasdlkcnvals;dnlas;dnfkl;asndfl
+dajsfkldjklafs;jdlkjfals;jdnckl;aslkdn;vlas;dnvlk;asnckxlvnaslkd;nvclkas;dnclk;nasdlkcnvals;fjklhjdvlnadjklnvaljsndvjlanjsdknvaskjldbnvjasnbdjvl;aslkdnv;lsandvlnasjdvnajnaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
