@@ -1,4 +1,5 @@
 ---
+import { Icon } from "astro-icon/components";
 import type { Device } from "@/data/devices";
 
 interface Props {
@@ -11,8 +12,8 @@ const { device, index, viewDetailsText } = Astro.props;
 ---
 
 <a
-	href={device.link}
-	target="_blank"
+	href={device.url}
+	target={device.url ? "_blank" : undefined}
 	rel="noopener noreferrer"
 	class="device-card group relative overflow-hidden rounded-xl border border-(--line-divider) bg-(--card-bg) transition-all duration-300 hover:border-(--primary)/50 hover:shadow-md hover:shadow-black/5 dark:hover:shadow-white/5 hover:scale-[1.02] hover:-translate-y-0.5 block cursor-pointer"
 	style={`animation-delay: ${index * 100}ms`}
@@ -26,11 +27,10 @@ const { device, index, viewDetailsText } = Astro.props;
 				class="absolute inset-0 bg-(--primary)/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
 			>
 			</div>
-			<img
-				src={device.image}
-				alt={device.name}
-				class="w-auto h-full max-h-full object-contain group-hover:scale-110 transition-all duration-500 drop-shadow-md relative z-10"
-				loading="lazy"
+			<Icon
+				name={device.icon}
+				aria-label={device.name}
+				class="w-28 h-28 text-(--primary) group-hover:scale-110 transition-all duration-500 drop-shadow-md relative z-10"
 			/>
 		</div>
 	</div>

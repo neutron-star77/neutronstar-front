@@ -122,44 +122,19 @@ export const siteConfig: SiteConfig = {
 	banner: {
 		// 支持单张图片或图片数组，当数组长度 > 1 时自动启用轮播
 		src: {
-			// ===== 顶图轮播（桌面端）=====
-			// 这里填你自己的图床链接（建议 16:9 或更宽的横幅图），数组超过 1 张即自动轮播。
-			// 图床：neutron-star77/fastimage（GitHub + jsDelivr CDN），管理页 https://neutron-star77.github.io/fastimage/
-			// 想换图：直接改下面的 URL，或在 https://neutron-star77.github.io/fastimage/ 上传新图后把链接贴进来。
 			desktop: [
-				"https://cdn.jsdelivr.net/gh/neutron-star77/fastimage@main/2026/08/433.webp",
-				"https://cdn.jsdelivr.net/gh/neutron-star77/fastimage@main/2026/08/451.webp",
-				"https://cdn.jsdelivr.net/gh/neutron-star77/fastimage@main/2026/08/469.webp",
-				"https://cdn.jsdelivr.net/gh/neutron-star77/fastimage@main/2026/08/487.webp",
-				"https://cdn.jsdelivr.net/gh/neutron-star77/fastimage@main/2026/08/505.webp",
-				"https://cdn.jsdelivr.net/gh/neutron-star77/fastimage@main/2026/08/523.webp",
-				"https://cdn.jsdelivr.net/gh/neutron-star77/fastimage@main/2026/08/541.webp",
-				"https://cdn.jsdelivr.net/gh/neutron-star77/fastimage@main/2026/08/559.webp",
-				"https://cdn.jsdelivr.net/gh/neutron-star77/fastimage@main/2026/08/577.webp",
-				"https://cdn.jsdelivr.net/gh/neutron-star77/fastimage@main/2026/08/595.webp",
-				"https://cdn.jsdelivr.net/gh/neutron-star77/fastimage@main/2026/08/613.webp",
-				"https://cdn.jsdelivr.net/gh/neutron-star77/fastimage@main/2026/08/631.webp",
-				"https://cdn.jsdelivr.net/gh/neutron-star77/fastimage@main/2026/08/649.webp",
-				"https://cdn.jsdelivr.net/gh/neutron-star77/fastimage@main/2026/08/666.webp",
-			], // 桌面横幅图片
-			// 移动端与桌面共用同一图床（响应式裁剪由 CSS 处理）
+				"/assets/desktop-banner/1.webp",
+				"/assets/desktop-banner/2.webp",
+				"/assets/desktop-banner/3.webp",
+				"/assets/desktop-banner/4.webp",
+			],
 			mobile: [
-				"https://cdn.jsdelivr.net/gh/neutron-star77/fastimage@main/2026/08/433.webp",
-				"https://cdn.jsdelivr.net/gh/neutron-star77/fastimage@main/2026/08/451.webp",
-				"https://cdn.jsdelivr.net/gh/neutron-star77/fastimage@main/2026/08/469.webp",
-				"https://cdn.jsdelivr.net/gh/neutron-star77/fastimage@main/2026/08/487.webp",
-				"https://cdn.jsdelivr.net/gh/neutron-star77/fastimage@main/2026/08/505.webp",
-				"https://cdn.jsdelivr.net/gh/neutron-star77/fastimage@main/2026/08/523.webp",
-				"https://cdn.jsdelivr.net/gh/neutron-star77/fastimage@main/2026/08/541.webp",
-				"https://cdn.jsdelivr.net/gh/neutron-star77/fastimage@main/2026/08/559.webp",
-				"https://cdn.jsdelivr.net/gh/neutron-star77/fastimage@main/2026/08/577.webp",
-				"https://cdn.jsdelivr.net/gh/neutron-star77/fastimage@main/2026/08/595.webp",
-				"https://cdn.jsdelivr.net/gh/neutron-star77/fastimage@main/2026/08/613.webp",
-				"https://cdn.jsdelivr.net/gh/neutron-star77/fastimage@main/2026/08/631.webp",
-				"https://cdn.jsdelivr.net/gh/neutron-star77/fastimage@main/2026/08/649.webp",
-				"https://cdn.jsdelivr.net/gh/neutron-star77/fastimage@main/2026/08/666.webp",
-			], // 移动横幅图片
-		}, // 使用图床链接（远程图片，无需本地资源）
+				"/assets/mobile-banner/1.webp",
+				"/assets/mobile-banner/2.webp",
+				"/assets/mobile-banner/3.webp",
+				"/assets/mobile-banner/4.webp",
+			],
+		},
 
 		position: "center", // 等同于 object-position，仅支持 'top', 'center', 'bottom'。默认为 'center'
 
@@ -187,22 +162,19 @@ export const siteConfig: SiteConfig = {
 
 		homeText: {
 			enable: true,
-			title: "NeutronStar", // 首页大标题（居中显示的大字）
+			title: "NeutronStar",
 			switchable: true,
 
 			subtitle: [
-				// 打字机轮播的副标题，想换文案直接改这里（每次显示一条，循环播放）
-				"星舰 · 技术博客",
-				"科技、阅读、杂谈与一切值得记录的东西",
-				"深空中的思考，永不停歇的探索",
-				"保持好奇，保持热爱",
+				"欢迎来到我的小小宇宙。",
+				"这里，日常的碎片与技术的记录缓缓流转。",
 			],
 			typewriter: {
-				enable: true, // 启用副标题打字机效果
+				enable: true,
 
-				speed: 100, // 打字速度（毫秒）
-				deleteSpeed: 50, // 删除速度（毫秒）
-				pauseTime: 2000, // 完全显示后的暂停时间（毫秒）
+				speed: 100,
+				deleteSpeed: 50,
+				pauseTime: 2000,
 			},
 		},
 
@@ -218,12 +190,12 @@ export const siteConfig: SiteConfig = {
 		},
 	},
 	toc: {
-		enable: true, // 总开关，启用目录功能
-		mobileTop: true, // 手机端顶部 TOC 按钮
-		desktopSidebar: true, // 电脑端右侧边栏 TOC
-		floating: true, // 悬浮 TOC 按钮
-		depth: 2, // 目录深度，1-6，1 表示只显示 h1 标题，2 表示显示 h1 和 h2 标题，依此类推
-		useJapaneseBadge: false, // 使用日语假名标记（あいうえお...）代替数字，开启后会将 1、2、3... 改为 あ、い、う...（中文站点建议关闭）
+		enable: true,
+		mobileTop: true,
+		desktopSidebar: true,
+		floating: true,
+		depth: 2,
+		useJapaneseBadge: false,
 	},
 	showCoverInContent: true, // 在文章内容页显示文章封面
 	generateOgImages: false, // 启用生成OpenGraph图片功能,注意开启后要渲染很长时间，不建议本地调试的时候开启
