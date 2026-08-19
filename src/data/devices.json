@@ -1,0 +1,50 @@
+{
+	"items": [
+		{
+			"category": "Servers",
+			"devices": [
+				{
+					"name": "QNAP NAS (hewll)",
+					"icon": "mdi:nas",
+					"description": "威联通 QNAP NAS，自建博客、图床与自动化服务（博客/签到/Hermes）",
+					"specs": [
+						"CPU: 4 核",
+						"RAM: 8GB",
+						"OS: QTS 5.x",
+						"服务: Typecho/Apache/PHP/Docker"
+					],
+					"url": "https://blog.neutronstar.fun",
+					"tags": ["NAS", "Home Server"]
+				}
+			]
+		},
+		{
+			"category": "PCs",
+			"devices": [
+				{
+					"name": "MateBook X",
+					"icon": "mdi:laptop",
+					"description": "华为 MateBook X 笔记本，主力开发机（Windows 11 + PowerShell）",
+					"specs": [
+						"OS: Windows 11",
+						"用途: 前端/脚本/桌面应用开发"
+					],
+					"url": "https://www.huawei.com",
+					"tags": ["Laptop", "Windows"]
+				}
+			]
+		},
+		{
+			"category": "Networks",
+			"devices": [
+				{
+					"name": "GL.iNet MT3000",
+					"icon": "mdi:router-wireless",
+					"description": "GL.iNet Beryl AX 路由器，家庭网络与外网访问网关",
+					"specs": ["Wi-Fi 6", "VPN", "NAS 端口转发"],
+					"tags": ["Router"]
+				}
+			]
+		}
+	]
+}

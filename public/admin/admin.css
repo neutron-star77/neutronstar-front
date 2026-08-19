@@ -1,0 +1,94 @@
+/* ===== NeutronStar 写作后台样式（Decap CMS）===== */
+/* 适用于 posts/spec 内容集合：标题+正文左栏，元信息右栏 */
+
+/* 双栏编辑器：字段块公共父容器 */
+.ns-editor-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 20px;
+  align-items: start;
+}
+.ns-editor-grid > div:not(:has(label[for^="title-field-"])):not(:has(label[for^="body-field-"])) {
+  grid-column: 1 / -1;
+}
+
+/* 左栏：标题 + 正文 占满宽 */
+[id^="title-field-"],
+[id^="body-field-"] {
+  grid-column: 1;
+}
+
+/* 右栏：元信息字段（覆盖左边） */
+#description-field-1,
+[id^="tags-field-"],
+[id^="published-field-"],
+[id^="updated-field-"],
+[id^="image-field-"],
+[id^="draft-field-"],
+[id^="pinned-field-"],
+[id^="category-field-"],
+[id^="lang-field-"],
+[id^="priority-field-"],
+[id^="comment-field-"],
+[id^="alias-field-"],
+[id^="permalink-field-"] {
+  grid-column: 2;
+}
+
+/* 长字段占满整行 */
+[id^="author-field-"],
+[id^="sourceLink-field-"],
+[id^="licenseName-field-"],
+[id^="licenseUrl-field-"] {
+  grid-column: 1 / -1;
+}
+
+/* 编辑器正文区域给足高度 */
+[class*="MarkdownEditor"] textarea {
+  min-height: 420px;
+  font-family: "JetBrains Mono", "Cascadia Code", Consolas, monospace;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* 标题输入加大 */
+[id^="title-field-"] input[type="text"] {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 12px;
+}
+
+/* 媒体库/上传按钮主色 */
+[class*="ImagePicker"] button,
+[class*="MediaLibrary"] button {
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
+/* 保存/发布主按钮 */
+[class*="TopBar"] button[class*="Button"]:last-child {
+  background: #2563eb;
+  color: #fff;
+}
+
+/* 移动端退化单列 */
+@media (max-width: 900px) {
+  .ns-editor-grid {
+    grid-template-columns: 1fr;
+  }
+  #description-field-1,
+  [id^="tags-field-"],
+  [id^="published-field-"],
+  [id^="updated-field-"],
+  [id^="image-field-"],
+  [id^="draft-field-"],
+  [id^="pinned-field-"],
+  [id^="category-field-"],
+  [id^="lang-field-"],
+  [id^="priority-field-"],
+  [id^="comment-field-"],
+  [id^="alias-field-"],
+  [id^="permalink-field-"] {
+    grid-column: 1;
+  }
+}

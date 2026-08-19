@@ -1,0 +1,92 @@
+{
+	"items": [
+		{
+			"id": "neutronstar",
+			"title": "NeutronStar 博客",
+			"description": "本站 —— 深空风格科技博客，Astro + Tailwind + Decap CMS，部署于 Cloudflare Pages。",
+			"image": "",
+			"category": "web",
+			"techStack": ["Astro", "TypeScript", "Tailwind CSS", "Svelte", "Decap CMS"],
+			"status": "in-progress",
+			"sourceCode": "https://github.com/neutron-star77/neutronstar",
+			"visitUrl": "https://blog.neutronstar.fun",
+			"startDate": "2026-08-01",
+			"featured": true,
+			"tags": ["Blog", "Astro", "Cloudflare"],
+			"showImage": false
+		},
+		{
+			"id": "fastimage",
+			"title": "fastimage 图床",
+			"description": "自建图床服务，配合 jsDelivr 全球加速，为博客提供稳定的图片托管。",
+			"image": "",
+			"category": "web",
+			"techStack": ["Python", "FastAPI", "GitHub", "jsDelivr"],
+			"status": "completed",
+			"sourceCode": "https://github.com/neutron-star77/fastimage",
+			"startDate": "2026-07-01",
+			"endDate": "2026-08-01",
+			"featured": true,
+			"tags": ["图床", "Python", "Self-hosted"],
+			"showImage": false
+		},
+		{
+			"id": "jpg-lossless",
+			"title": "JpgLossless 图片压缩工作台",
+			"description": "纯本地运行的图片无损压缩桌面工具，支持原格式无损与转 WebP/PNG/JPG，双主题可切换。",
+			"image": "",
+			"category": "desktop",
+			"techStack": ["Python", "pywebview", "WebView2", "ect"],
+			"status": "completed",
+			"sourceCode": "https://github.com/neutron-star77/jpg-lossless",
+			"startDate": "2026-06-01",
+			"endDate": "2026-07-15",
+			"featured": true,
+			"tags": ["Desktop", "Python", "图片工具"],
+			"showImage": false
+		},
+		{
+			"id": "ms-rewards-auto",
+			"title": "微软积分自动签到",
+			"description": "Microsoft Rewards 每日自动获取：Windows 本地 + NAS(Docker) 双部署，Playwright 驱动，随机延迟防封。",
+			"image": "",
+			"category": "other",
+			"techStack": ["Python", "Playwright", "Docker", "NAS"],
+			"status": "completed",
+			"sourceCode": "https://github.com/neutron-star77/ms-rewards-auto",
+			"startDate": "2026-04-01",
+			"endDate": "2026-05-01",
+			"featured": true,
+			"tags": ["Automation", "Python", "Playwright"],
+			"showImage": false
+		},
+		{
+			"id": "maoboli",
+			"title": "Maoboli Typecho 主题",
+			"description": "毛玻璃风格的 Typecho 主题：毛玻璃/光斑/换肤/模块化，可微调可大改。",
+			"image": "",
+			"category": "web",
+			"techStack": ["PHP", "Typecho", "CSS", "JavaScript"],
+			"status": "completed",
+			"sourceCode": "https://github.com/neutron-star77/maoboli",
+			"startDate": "2026-05-01",
+			"endDate": "2026-07-01",
+			"tags": ["Typecho", "PHP", "Theme"],
+			"showImage": false
+		},
+		{
+			"id": "sync-hub",
+			"title": "sync-hub 中医知识库",
+			"description": "中医知识库公开检索 API 与展示页：思源笔记 → Supabase → Vercel + GitHub Pages。",
+			"image": "",
+			"category": "web",
+			"techStack": ["JavaScript", "Supabase", "Vercel", "GitHub Pages"],
+			"status": "completed",
+			"sourceCode": "https://github.com/neutron-star77/sync-hub",
+			"startDate": "2026-03-01",
+			"endDate": "2026-04-01",
+			"tags": ["API", "Supabase", "Knowledge"],
+			"showImage": false
+		}
+	]
+}

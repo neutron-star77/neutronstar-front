@@ -1,0 +1,194 @@
+{
+	"items": [
+		{
+			"id": "sync-hub",
+			"title": "sync-hub 中医知识库",
+			"description": "搭建思源笔记 → Supabase → Vercel + GitHub Pages 的中医知识公开检索链路。",
+			"type": "project",
+			"startDate": "2026-03",
+			"endDate": "2026-04",
+			"organization": "个人项目",
+			"position": "独立开发",
+			"skills": ["javascript", "supabase"],
+			"achievements": [
+				"打通笔记 → 数据库 → 公开检索 API 的完整链路",
+				"实现知识库检索展示页并双端部署"
+			],
+			"links": [
+				{
+					"name": "GitHub",
+					"url": "https://github.com/neutron-star77/sync-hub",
+					"type": "project"
+				}
+			],
+			"icon": "material-symbols:library-books",
+			"color": "#3ECF8E",
+			"featured": false
+		},
+		{
+			"id": "ms-rewards-auto",
+			"title": "微软积分自动签到",
+			"description": "Playwright 驱动 Edge 每日自动获取 Microsoft Rewards 积分，Windows 本地 + NAS(Docker) 双部署。",
+			"type": "project",
+			"startDate": "2026-04",
+			"endDate": "2026-05",
+			"organization": "个人项目",
+			"position": "独立开发",
+			"skills": ["python", "playwright", "docker"],
+			"achievements": [
+				"实现登录态复用与随机延迟防封策略",
+				"固化 NAS 容器化部署与面板运维流程"
+			],
+			"links": [
+				{
+					"name": "GitHub",
+					"url": "https://github.com/neutron-star77/ms-rewards-auto",
+					"type": "project"
+				}
+			],
+			"icon": "material-symbols:token",
+			"color": "#2496ED",
+			"featured": false
+		},
+		{
+			"id": "maoboli",
+			"title": "Maoboli Typecho 主题",
+			"description": "毛玻璃风格的 Typecho 主题：玻璃拟态、光斑背景、多配色换肤、模块化可裁剪。",
+			"type": "project",
+			"startDate": "2026-05",
+			"endDate": "2026-07",
+			"organization": "Typecho 主题",
+			"position": "主题作者",
+			"skills": ["php", "html-css", "javascript"],
+			"achievements": [
+				"独立完成主题全部模板与后台设置面板",
+				"部署到线上 Typecho 博客并即时生效迭代"
+			],
+			"links": [
+				{
+					"name": "GitHub",
+					"url": "https://github.com/neutron-star77/maoboli",
+					"type": "project"
+				}
+			],
+			"icon": "material-symbols:auto-awesome",
+			"color": "#A78BFA",
+			"featured": false
+		},
+		{
+			"id": "jpg-lossless",
+			"title": "JpgLossless 图片压缩工作台",
+			"description": "纯本地图片无损压缩桌面工具：ect 无损 + 转 WebP/PNG/JPG，pywebview 双主题界面。",
+			"type": "project",
+			"startDate": "2026-06",
+			"endDate": "2026-07",
+			"organization": "个人项目",
+			"position": "独立开发",
+			"skills": ["python", "powershell", "sqlite"],
+			"achievements": [
+				"发布多轮 Windows 版本并双端（GitHub + Gitee）同步",
+				"固化一键同步发布与 Release 资产上传流程"
+			],
+			"links": [
+				{
+					"name": "GitHub",
+					"url": "https://github.com/neutron-star77/jpg-lossless",
+					"type": "project"
+				}
+			],
+			"icon": "material-symbols:compress",
+			"color": "#F97316",
+			"featured": false
+		},
+		{
+			"id": "fastimage",
+			"title": "fastimage 自建图床",
+			"description": "Python + FastAPI 自建图床，配合 jsDelivr 全球加速，为博客提供稳定图片托管。",
+			"type": "project",
+			"startDate": "2026-07",
+			"endDate": "2026-08",
+			"organization": "个人项目",
+			"position": "独立开发",
+			"skills": ["python", "fastapi", "seo"],
+			"achievements": [
+				"实现上传 / 鉴权 / 管理接口与存储策略",
+				"接入 GitHub + jsDelivr 加速链路"
+			],
+			"links": [
+				{
+					"name": "GitHub",
+					"url": "https://github.com/neutron-star77/fastimage",
+					"type": "project"
+				}
+			],
+			"icon": "material-symbols:image",
+			"color": "#16A34A",
+			"featured": false
+		},
+		{
+			"id": "neutronstar",
+			"title": "NeutronStar 博客全新上线",
+			"description": "以 Astro 7 + Tailwind v4 + Three.js 重构的深空风格科技博客，数据 JSON 化 + Decap CMS 后台可在线编辑。",
+			"type": "project",
+			"startDate": "2026-08",
+			"endDate": "",
+			"organization": "本站",
+			"position": "站长 / 独立开发",
+			"skills": ["astro", "typescript", "tailwindcss", "threejs", "decap-cms"],
+			"achievements": [
+				"从零搭建全新技术栈，替换旧 Typecho 前后端",
+				"接入 Decap CMS，后台直接编辑站点数据",
+				"部署 Cloudflare Pages，主域名一键切换"
+			],
+			"links": [
+				{
+					"name": "访问站点",
+					"url": "https://blog.neutronstar.fun",
+					"type": "website"
+				},
+				{
+					"name": "GitHub",
+					"url": "https://github.com/neutron-star77/neutronstar",
+					"type": "project"
+				}
+			],
+			"icon": "material-symbols:rocket-launch",
+			"color": "#6366F1",
+			"featured": true
+		},
+		{
+			"id": "blog-domain",
+			"title": "博客固定域名上线",
+			"description": "通过 Cloudflare Named Tunnel 打通外网访问，固定域名 blog.neutronstar.fun 正式启用，弃用临时隧道。",
+			"type": "achievement",
+			"startDate": "2026-08-05",
+			"organization": "网络基础设施",
+			"position": "自建",
+			"skills": ["cloudflare", "qnap-nas", "nginx"],
+			"achievements": [
+				"解决 NAT 环境外网访问难题",
+				"固定域名稳定运行，站点资源全链路 200"
+			],
+			"icon": "material-symbols:language",
+			"color": "#F38020",
+			"featured": true
+		},
+		{
+			"id": "theme-refactor",
+			"title": "Typecho 主题后台重构",
+			"description": "将博客后台设置页重构为全分类同屏 + 折叠分组 + 锚点导航，优化主题维护体验。",
+			"type": "achievement",
+			"startDate": "2026-08-17",
+			"organization": "Typecho",
+			"position": "主题开发",
+			"skills": ["php", "javascript", "html-css"],
+			"achievements": [
+				"修复图标选择器卡死与折叠失效问题",
+				"重构为卡片网格 + 滚动高亮的设置体验"
+			],
+			"icon": "material-symbols:tune",
+			"color": "#3C8CFF",
+			"featured": false
+		}
+	]
+}

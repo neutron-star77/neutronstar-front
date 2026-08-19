@@ -1,0 +1,82 @@
+{
+	"items": [
+		{
+			"id": "codebuddy",
+			"name": "CodeBuddy",
+			"description": {
+				"en": "Tencent's AI IDE assistant for coding, refactoring, and debugging.",
+				"zh_CN": "腾讯 AI IDE 助手，用于编码、重构与调试。"
+			},
+			"icon": "material-symbols:code",
+			"category": "coding",
+			"frequency": "daily",
+			"url": "https://www.codebuddy.cn",
+			"usage": {
+				"en": "Daily: writing, refactoring, reviewing code",
+				"zh_CN": "每天：写代码、重构、代码审查"
+			},
+			"tags": ["Coding", "AI IDE"],
+			"color": "#6366F1"
+		},
+		{
+			"id": "claude",
+			"name": "Claude",
+			"description": {
+				"en": "Anthropic's AI assistant for reasoning, writing, and complex tasks.",
+				"zh_CN": "Anthropic 的 AI 助手，擅长推理、写作与复杂任务。"
+			},
+			"icon": "material-symbols:auto-awesome",
+			"category": "chat",
+			"frequency": "daily",
+			"url": "https://claude.ai",
+			"usage": {
+				"en": "Daily: brainstorming, writing, complex problem solving",
+				"zh_CN": "每天：头脑风暴、写作、复杂问题求解"
+			},
+			"tags": ["Chat", "Assistant"],
+			"color": "#D97757"
+		},
+		{
+			"id": "github-copilot",
+			"name": "GitHub Copilot",
+			"description": {
+				"en": "AI pair programmer that suggests code in real time.",
+				"zh_CN": "实时建议代码的 AI 结对编程助手。"
+			},
+			"icon": "mdi:github",
+			"category": "coding",
+			"frequency": "daily",
+			"url": "https://github.com/features/copilot",
+			"tags": ["Coding"],
+			"color": "#10A37F"
+		},
+		{
+			"id": "pagefind",
+			"name": "Pagefind",
+			"description": {
+				"en": "Static site search, fully client-side and offline.",
+				"zh_CN": "静态站搜索，全客户端离线运行。"
+			},
+			"icon": "material-symbols:search",
+			"category": "search",
+			"frequency": "weekly",
+			"url": "https://pagefind.app",
+			"tags": ["Search", "Open Source"],
+			"color": "#3B82F6"
+		},
+		{
+			"id": "playwright",
+			"name": "Playwright",
+			"description": {
+				"en": "Browser automation and E2E testing framework.",
+				"zh_CN": "浏览器自动化与端到端测试框架。"
+			},
+			"icon": "simple-icons:playwright",
+			"category": "coding",
+			"frequency": "weekly",
+			"url": "https://playwright.dev",
+			"tags": ["Testing", "Automation"],
+			"color": "#2EAD33"
+		}
+	]
+}

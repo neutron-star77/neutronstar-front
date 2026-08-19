@@ -1,0 +1,310 @@
+{
+	"items": [
+		{
+			"id": "html-css",
+			"name": "HTML / CSS",
+			"description": "语义化结构与现代 CSS：Flexbox/Grid 布局、CSS 变量设计令牌、深浅色主题适配，独立完成多套 Typecho 主题的样式体系。",
+			"icon": "logos:html-5",
+			"category": "frontend",
+			"level": "advanced",
+			"experience": { "years": 4, "months": 0 },
+			"projects": ["maoboli", "neutronstar"],
+			"color": "#E34F26"
+		},
+		{
+			"id": "javascript",
+			"name": "JavaScript",
+			"description": "ES6+ 日常开发，含异步编程、DOM 操作、浏览器自动化与脚本工具链的实战经验。",
+			"icon": "logos:javascript",
+			"category": "frontend",
+			"level": "advanced",
+			"experience": { "years": 4, "months": 0 },
+			"projects": ["maoboli", "sync-hub", "neutronstar"],
+			"color": "#F7DF1E"
+		},
+		{
+			"id": "typescript",
+			"name": "TypeScript",
+			"description": "类型安全的前端工程化开发，用于 Astro 站点、内容集合 schema 与组件类型系统。",
+			"icon": "logos:typescript-icon",
+			"category": "frontend",
+			"level": "advanced",
+			"experience": { "years": 2, "months": 0 },
+			"projects": ["neutronstar"],
+			"color": "#3178C6"
+		},
+		{
+			"id": "astro",
+			"name": "Astro",
+			"description": "静态优先的现代化框架：内容集合、岛屿架构、RSS/OG 生成，已在本站完整落地。",
+			"icon": "logos:astro-icon",
+			"category": "frontend",
+			"level": "advanced",
+			"experience": { "years": 1, "months": 0 },
+			"projects": ["neutronstar"],
+			"color": "#FF5D01"
+		},
+		{
+			"id": "svelte",
+			"name": "Svelte",
+			"description": "编译期框架，在 Mizuki 主题中负责交互岛屿组件（搜索、阅读进度等）的复用与适配。",
+			"icon": "logos:svelte-icon",
+			"category": "frontend",
+			"level": "intermediate",
+			"experience": { "years": 0, "months": 8 },
+			"projects": ["neutronstar"],
+			"color": "#FF3E00"
+		},
+		{
+			"id": "tailwindcss",
+			"name": "Tailwind CSS",
+			"description": "Utility-first 样式方案，结合 CSS 变量令牌与 @theme 定制设计系统。",
+			"icon": "logos:tailwindcss-icon",
+			"category": "frontend",
+			"level": "advanced",
+			"experience": { "years": 2, "months": 0 },
+			"projects": ["neutronstar"],
+			"color": "#06B6D4"
+		},
+		{
+			"id": "threejs",
+			"name": "Three.js",
+			"description": "首页 Hero 星场粒子效果的克制式使用，带 reduced-motion 降级。",
+			"icon": "logos:threejs",
+			"category": "frontend",
+			"level": "beginner",
+			"experience": { "years": 0, "months": 4 },
+			"projects": ["neutronstar"],
+			"color": "#7A7A7A"
+		},
+		{
+			"id": "python",
+			"name": "Python",
+			"description": "主力后端语言：FastAPI 图床 API、pywebview 桌面应用、Playwright 自动化、批量脚本。",
+			"icon": "logos:python",
+			"category": "backend",
+			"level": "advanced",
+			"experience": { "years": 3, "months": 0 },
+			"projects": ["fastimage", "jpg-lossless", "ms-rewards-auto"],
+			"color": "#3776AB"
+		},
+		{
+			"id": "fastapi",
+			"name": "FastAPI",
+			"description": "高性能异步 API 框架，用于自建图床服务的上传/鉴权/管理接口。",
+			"icon": "logos:fastapi",
+			"category": "backend",
+			"level": "intermediate",
+			"experience": { "years": 1, "months": 0 },
+			"projects": ["fastimage"],
+			"color": "#009688"
+		},
+		{
+			"id": "php",
+			"name": "PHP",
+			"description": "Typecho 主题全栈开发：模板引擎、后台设置表单、主题函数库，独立完成多套主题。",
+			"icon": "logos:php",
+			"category": "backend",
+			"level": "advanced",
+			"experience": { "years": 3, "months": 0 },
+			"projects": ["maoboli"],
+			"color": "#777BB4"
+		},
+		{
+			"id": "nodejs",
+			"name": "Node.js",
+			"description": "前端工具链与自动化脚本：npm 生态、构建管线、内容处理脚本。",
+			"icon": "logos:nodejs-icon",
+			"category": "backend",
+			"level": "intermediate",
+			"experience": { "years": 2, "months": 0 },
+			"projects": ["neutronstar"],
+			"color": "#339933"
+		},
+		{
+			"id": "playwright",
+			"name": "Playwright",
+			"description": "浏览器自动化：微软积分每日签到、图床网页自动扩容，含随机延迟与防封策略。",
+			"icon": "logos:playwright",
+			"category": "backend",
+			"level": "advanced",
+			"experience": { "years": 1, "months": 6 },
+			"projects": ["ms-rewards-auto"],
+			"color": "#2EAD33"
+		},
+		{
+			"id": "powershell",
+			"name": "PowerShell",
+			"description": "Windows 自动化主力：一键同步发布脚本、双端 git 推送、NAS SMB 批量运维。",
+			"icon": "logos:powershell",
+			"category": "backend",
+			"level": "advanced",
+			"experience": { "years": 2, "months": 6 },
+			"projects": ["jpg-lossless"],
+			"color": "#5391FE"
+		},
+		{
+			"id": "mysql",
+			"name": "MySQL",
+			"description": "Typecho 生产库运维：表结构、索引优化、直接 SQL 排查与数据迁移。",
+			"icon": "logos:mysql-icon",
+			"category": "database",
+			"level": "intermediate",
+			"experience": { "years": 2, "months": 0 },
+			"projects": ["maoboli"],
+			"color": "#4479A1"
+		},
+		{
+			"id": "sqlite",
+			"name": "SQLite",
+			"description": "轻量嵌入式数据库，桌面工具与本地化数据存储的首选。",
+			"icon": "simple-icons:sqlite",
+			"category": "database",
+			"level": "intermediate",
+			"experience": { "years": 1, "months": 6 },
+			"projects": ["jpg-lossless"],
+			"color": "#003B57"
+		},
+		{
+			"id": "supabase",
+			"name": "Supabase",
+			"description": "Postgres + Auth + 实时能力的一体化 BaaS，用于知识库检索 API。",
+			"icon": "logos:supabase-icon",
+			"category": "database",
+			"level": "intermediate",
+			"experience": { "years": 1, "months": 0 },
+			"projects": ["sync-hub"],
+			"color": "#3ECF8E"
+		},
+		{
+			"id": "git",
+			"name": "Git",
+			"description": "双端（GitHub + Gitee）发布流程：tag 管理、Release 资产上传、一键同步脚本。",
+			"icon": "logos:git-icon",
+			"category": "tools",
+			"level": "advanced",
+			"experience": { "years": 3, "months": 6 },
+			"projects": ["jpg-lossless", "ms-rewards-auto", "maoboli"],
+			"color": "#F05032"
+		},
+		{
+			"id": "vscode",
+			"name": "VS Code",
+			"description": "主力编辑器，重度使用远程/插件生态与 AI 辅助编码。",
+			"icon": "logos:visual-studio-code",
+			"category": "tools",
+			"level": "expert",
+			"experience": { "years": 4, "months": 0 },
+			"color": "#007ACC"
+		},
+		{
+			"id": "codebuddy",
+			"name": "CodeBuddy",
+			"description": "日常 AI 编码搭档：跨语言重构、自动化脚本、多端部署排障的副驾。",
+			"icon": "material-symbols:smart-toy",
+			"category": "tools",
+			"level": "expert",
+			"experience": { "years": 1, "months": 0 },
+			"projects": ["neutronstar", "jpg-lossless", "fastimage"],
+			"color": "#6366F1"
+		},
+		{
+			"id": "docker",
+			"name": "Docker",
+			"description": "NAS 容器化部署：签到脚本容器、反向代理、自建服务编排。",
+			"icon": "logos:docker-icon",
+			"category": "tools",
+			"level": "intermediate",
+			"experience": { "years": 1, "months": 6 },
+			"projects": ["ms-rewards-auto"],
+			"color": "#2496ED"
+		},
+		{
+			"id": "qnap-nas",
+			"name": "QNAP NAS",
+			"description": "家庭数据中心运维：共享目录/SMB、定时任务、web 栈、Cloudflared 隧道、备份体系。",
+			"icon": "material-symbols:hard-drive",
+			"category": "tools",
+			"level": "advanced",
+			"experience": { "years": 2, "months": 0 },
+			"projects": ["ms-rewards-auto"],
+			"color": "#1B396A"
+		},
+		{
+			"id": "linux",
+			"name": "Linux",
+			"description": "服务器运维与脚本：systemd/cron、进程管理、防火墙与远程排障。",
+			"icon": "logos:linux-tux",
+			"category": "tools",
+			"level": "intermediate",
+			"experience": { "years": 2, "months": 0 },
+			"color": "#FCC624"
+		},
+		{
+			"id": "cloudflare",
+			"name": "Cloudflare",
+			"description": "Pages 静态部署、Named Tunnel 固定域名、DNS 与缓存策略配置。",
+			"icon": "logos:cloudflare-icon",
+			"category": "tools",
+			"level": "intermediate",
+			"experience": { "years": 1, "months": 0 },
+			"projects": ["neutronstar"],
+			"color": "#F38020"
+		},
+		{
+			"id": "nginx",
+			"name": "Nginx / Apache",
+			"description": "web 服务配置与反向代理：虚拟主机、HTTPS、访问控制。",
+			"icon": "logos:nginx",
+			"category": "tools",
+			"level": "intermediate",
+			"experience": { "years": 2, "months": 0 },
+			"projects": ["maoboli"],
+			"color": "#009639"
+		},
+		{
+			"id": "typecho",
+			"name": "Typecho",
+			"description": "深度定制博客系统：主题开发、后台设置表单、插件级功能改造，累计维护三套主题。",
+			"icon": "material-symbols:web",
+			"category": "other",
+			"level": "advanced",
+			"experience": { "years": 2, "months": 6 },
+			"projects": ["maoboli"],
+			"color": "#3C8CFF"
+		},
+		{
+			"id": "decap-cms",
+			"name": "Decap CMS",
+			"description": "Git 驱动的可视化内容管理：数据 JSON 化 + 后台在线编辑 + OAuth 代理鉴权。",
+			"icon": "material-symbols:markdown",
+			"category": "other",
+			"level": "intermediate",
+			"experience": { "years": 0, "months": 6 },
+			"projects": ["neutronstar"],
+			"color": "#403C3A"
+		},
+		{
+			"id": "pagefind",
+			"name": "Pagefind",
+			"description": "静态站全文搜索索引：离线搜索、无后端依赖。",
+			"icon": "material-symbols:search",
+			"category": "other",
+			"level": "beginner",
+			"experience": { "years": 0, "months": 4 },
+			"projects": ["neutronstar"],
+			"color": "#2D6CDF"
+		},
+		{
+			"id": "seo",
+			"name": "SEO / 性能优化",
+			"description": "OG 元信息、结构化数据、图片压缩与静态资源缓存策略的综合调优。",
+			"icon": "material-symbols:trending-up",
+			"category": "other",
+			"level": "intermediate",
+			"experience": { "years": 1, "months": 6 },
+			"projects": ["neutronstar", "fastimage"],
+			"color": "#16A34A"
+		}
+	]
+}

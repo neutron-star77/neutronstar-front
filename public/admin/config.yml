@@ -1,0 +1,272 @@
+# NeutronStar 写作后台 —— Decap CMS 配置
+# 数据保存在 GitHub 仓库（branch: main），每次保存自动提交并触发 Cloudflare Pages 构建
+backend:
+  name: github
+  repo: neutron-star77/neutronstar-front
+  branch: main
+  # 以下两个端点由本项目 functions/api/oauth/ 下的 Pages Functions 提供
+  base_url: https://blog.neutronstar.fun
+  auth_endpoint: api/oauth/auth
+  auth_scope: repo
+
+local_backend: false
+
+# 媒体文件上传目录（对应 public/images/uploads，静态站可访问）
+media_folder: /public/images/uploads
+public_folder: /images/uploads
+
+publish_mode: editorial_workflow
+
+editor:
+  preview: false
+
+collections:
+  # ===== 博客文章 =====
+  - name: posts
+    label: 博客文章
+    label_singular: 文章
+    folder: src/content/posts
+    create: true
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    summary: "{{title}}（{{published}}）"
+    sortable_fields: ["published", "updated"]
+    fields:
+      - { name: title, label: 标题, widget: string, required: true }
+      - { name: description, label: 摘要, widget: text, required: false }
+      - { name: published, label: 发布日期, widget: datetime, required: true }
+      - { name: updated, label: 更新日期, widget: datetime, required: false }
+      - { name: image, label: 封面图, widget: image, required: false, choose_url: true }
+      - { name: tags, label: 标签, widget: list, required: false, default: [] }
+      - { name: category, label: 分类, widget: string, required: false }
+      - { name: draft, label: 草稿（不发布） , widget: boolean, required: false, default: false }
+      - { name: pinned, label: 置顶, widget: boolean, required: false, default: false }
+      - { name: comment, label: 允许评论, widget: boolean, required: false, default: true }
+      - { name: priority, label: 优先级, widget: number, required: false, value_type: int, min: 0 }
+      - { name: lang, label: 语言, widget: string, required: false, default: "zh-CN" }
+      - { name: author, label: 作者, widget: string, required: false }
+      - { name: alias, label: 别名（URL） , widget: string, required: false }
+      - { name: permalink, label: 固定链接, widget: string, required: false }
+      - { name: sourceLink, label: 原文链接, widget: string, required: false }
+      - { name: licenseName, label: 许可名称, widget: string, required: false }
+      - { name: licenseUrl, label: 许可链接, widget: string, required: false }
+      - { name: hideHomeContent, label: 首页隐藏正文, widget: boolean, required: false, default: false }
+      - { name: encrypted, label: 加密文章, widget: boolean, required: false, default: false }
+      - { name: password, label: 访问密码, widget: string, required: false }
+      - { name: passwordHint, label: 密码提示, widget: string, required: false }
+      - { name: body, label: 正文, widget: markdown, required: true }
+
+  # ===== 独立页面（关于 / 友链） =====
+  - name: spec
+    label: 独立页面
+    label_singular: 页面
+    folder: src/content/spec
+    create: true
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    fields:
+      - { name: title, label: 标题, widget: string, required: true }
+      - { name: description, label: 摘要, widget: text, required: false }
+      - { name: image, label: 封面图, widget: image, required: false, choose_url: true }
+      - { name: body, label: 正文, widget: markdown, required: true }
+
+  # ===== 站点数据（JSON，后台直接改） =====
+  - name: data-friends
+    label: 友链数据
+    format: json
+    files:
+      - name: friends
+        label: 友链列表
+        file: src/data/friends.json
+        fields:
+          - name: items
+            label: 友链
+            widget: list
+            fields:
+              - { name: id, label: ID（数字） , widget: number, value_type: int }
+              - { name: title, label: 名称, widget: string }
+              - { name: imgurl, label: 头像链接, widget: string }
+              - { name: desc, label: 一句话介绍, widget: text }
+              - { name: siteurl, label: 站点链接, widget: string }
+              - { name: tags, label: 标签, widget: list, required: false }
+
+  - name: data-projects
+    label: 项目数据
+    format: json
+    files:
+      - name: projects
+        label: 项目列表
+        file: src/data/projects.json
+        fields:
+          - name: items
+            label: 项目
+            widget: list
+            fields:
+              - { name: id, label: ID, widget: string }
+              - { name: title, label: 名称, widget: string }
+              - { name: description, label: 描述, widget: text }
+              - { name: image, label: 封面图链接, widget: string, required: false }
+              - { name: category, label: 分类, widget: select, options: ["web", "mobile", "desktop", "other"] }
+              - { name: techStack, label: 技术栈, widget: list }
+              - { name: status, label: 状态, widget: select, options: ["completed", "in-progress", "planned"] }
+              - { name: startDate, label: 开始日期, widget: string }
+              - { name: endDate, label: 结束日期, widget: string, required: false }
+              - { name: liveDemo, label: 在线演示, widget: string, required: false }
+              - { name: sourceCode, label: 源码地址, widget: string, required: false }
+              - { name: visitUrl, label: 访问地址, widget: string, required: false }
+              - { name: featured, label: 精选展示, widget: boolean, required: false, default: false }
+              - { name: tags, label: 标签, widget: list, required: false }
+              - { name: showImage, label: 显示封面, widget: boolean, required: false, default: true }
+
+  - name: data-skills
+    label: 技能数据
+    format: json
+    files:
+      - name: skills
+        label: 技能列表
+        file: src/data/skills.json
+        fields:
+          - name: items
+            label: 技能
+            widget: list
+            fields:
+              - { name: id, label: ID, widget: string }
+              - { name: name, label: 名称, widget: string }
+              - { name: description, label: 描述, widget: text }
+              - { name: icon, label: 图标（Iconify） , widget: string }
+              - { name: category, label: 分类, widget: select, options: ["frontend", "backend", "database", "tools", "other"] }
+              - { name: level, label: 熟练度, widget: select, options: ["beginner", "intermediate", "advanced", "expert"] }
+              - name: experience
+                label: 经验年限
+                widget: object
+                fields:
+                  - { name: years, label: 年, widget: number, value_type: int, default: 0 }
+                  - { name: months, label: 月, widget: number, value_type: int, default: 0 }
+              - { name: projects, label: 关联项目 ID, widget: list, required: false }
+              - { name: color, label: 主题色, widget: string, required: false }
+
+  - name: data-timeline
+    label: 时间线数据
+    format: json
+    files:
+      - name: timeline
+        label: 里程碑列表
+        file: src/data/timeline.json
+        fields:
+          - name: items
+            label: 里程碑
+            widget: list
+            fields:
+              - { name: id, label: ID, widget: string }
+              - { name: title, label: 标题, widget: string }
+              - { name: description, label: 描述, widget: text }
+              - { name: type, label: 类型, widget: select, options: ["education", "work", "project", "achievement"] }
+              - { name: startDate, label: 开始日期, widget: string }
+              - { name: endDate, label: 结束日期（可空） , widget: string, required: false }
+              - { name: organization, label: 组织, widget: string, required: false }
+              - { name: position, label: 职位 / 身份, widget: string, required: false }
+              - { name: skills, label: 相关技能 ID, widget: list, required: false }
+              - { name: achievements, label: 亮点, widget: list, required: false }
+              - { name: icon, label: 图标（Iconify） , widget: string, required: false }
+              - { name: color, label: 主题色, widget: string, required: false }
+              - { name: featured, label: 精选展示, widget: boolean, required: false, default: false }
+
+  - name: data-devices
+    label: 设备数据
+    format: json
+    files:
+      - name: devices
+        label: 设备分类列表
+        file: src/data/devices.json
+        fields:
+          - name: items
+            label: 分类
+            widget: list
+            fields:
+              - { name: category, label: 分类名（如 Servers） , widget: string }
+              - name: devices
+                label: 设备
+                widget: list
+                fields:
+                  - { name: name, label: 名称, widget: string }
+                  - { name: icon, label: 图标（Iconify） , widget: string }
+                  - { name: description, label: 描述, widget: text }
+                  - { name: specs, label: 规格, widget: list }
+                  - { name: url, label: 链接, widget: string, required: false }
+                  - { name: tags, label: 标签, widget: list, required: false }
+
+  - name: data-ai-tools
+    label: AI 工具数据
+    format: json
+    files:
+      - name: ai-tools
+        label: AI 工具列表
+        file: src/data/ai-tools.json
+        fields:
+          - name: items
+            label: 工具
+            widget: list
+            fields:
+              - { name: id, label: ID, widget: string }
+              - { name: name, label: 名称, widget: string }
+              - name: description
+                label: 描述（多语言）
+                widget: object
+                fields:
+                  - { name: en, label: English, widget: text, required: false }
+                  - { name: zh_CN, label: 简体中文, widget: text, required: false }
+              - { name: icon, label: 图标（Iconify） , widget: string }
+              - { name: category, label: 分类, widget: select, options: ["chat", "coding", "image", "audio", "video", "writing", "search", "other"] }
+              - { name: frequency, label: 使用频率, widget: select, options: ["daily", "weekly", "occasional", "experimental"] }
+              - { name: url, label: 链接, widget: string, required: false }
+              - { name: tags, label: 标签, widget: list, required: false }
+              - { name: color, label: 主题色, widget: string, required: false }
+
+  - name: data-anime
+    label: 番剧数据
+    format: json
+    files:
+      - name: anime
+        label: 番剧列表
+        file: src/data/anime.json
+        fields:
+          - name: items
+            label: 番剧
+            widget: list
+            fields:
+              - { name: title, label: 标题, widget: string }
+              - { name: status, label: 状态, widget: select, options: ["watching", "completed", "planned"] }
+              - { name: rating, label: 评分, widget: number, value_type: float, min: 0, max: 10 }
+              - { name: cover, label: 封面链接, widget: string }
+              - { name: description, label: 描述, widget: text }
+              - { name: episodes, label: 集数描述, widget: string }
+              - { name: year, label: 年份, widget: string }
+              - { name: genre, label: 类型, widget: list }
+              - { name: studio, label: 制作公司, widget: string }
+              - { name: link, label: 链接, widget: string }
+              - { name: progress, label: 观看进度（集） , widget: number, value_type: int }
+              - { name: totalEpisodes, label: 总集数, widget: number, value_type: int }
+              - { name: startDate, label: 开始日期, widget: string }
+              - { name: endDate, label: 结束日期, widget: string }
+
+  - name: data-diary
+    label: 日记数据
+    format: json
+    files:
+      - name: diary
+        label: 日记条目
+        file: src/data/diary.json
+        fields:
+          - name: items
+            label: 日记
+            widget: list
+            fields:
+              - { name: id, label: ID（数字） , widget: number, value_type: int }
+              - { name: content, label: 内容, widget: markdown }
+              - { name: date, label: 日期, widget: string }
+              - { name: images, label: 图片链接, widget: list, required: false }
+              - { name: location, label: 地点, widget: string, required: false }
+              - { name: mood, label: 心情, widget: string, required: false }
+              - { name: tags, label: 标签, widget: list, required: false }
