@@ -11,9 +11,9 @@ export const commentConfig: CommentConfig = {
 	},
 	giscus: {
 		repo: "neutron-star77/neutronstar-front",
-		repoId: "1339647575",
+		repoId: "R_kgDOT9lmVw",
 		category: "Announcements",
-		categoryId: "51317589",
+		categoryId: "DIC_kwDOT9lmV84DDwtV",
 		mapping: "pathname",
 		strict: "0",
 		reactionsEnabled: "1",
