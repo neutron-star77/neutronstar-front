@@ -46,6 +46,7 @@ yarn.lock
 *.iml
 .claude
 .codebuddy
+.codex/
 
 # 本地工具缓存 / 暂存
 .wrangler/
